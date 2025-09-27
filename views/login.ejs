@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body style="background-color: black; color: thistle; text-align: center;">
+    <h1>Login</h1>
+    <% if (typeof error !== 'undefined' && error) { %>
+      <p style="color:red;"><%= error %></p>
+    <% } %>
+    
+    <p><a href="/signup" style="color: thistle;">Don't have an account? Sign up here</a></p>
+    
+    <form action="/authuser/login" method="post">
+        <label>email</label>
+        <input type="email" required name="email" placeholder="Enter your email">
+        <br>
+        <label>password</label>
+        <input type="password" required name="password" placeholder="Enter your password">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    
+</body>
+</html>

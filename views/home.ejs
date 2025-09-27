@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short URL Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="text-align: center; background-color: black; color: thistle;">
+    <h1>Welcome to ShortURL </h1>
+    <h2>Welcome <%= user ? user.email : 'Guest' %>!</h2>
+    
+    <p><a href="/logout" style="color: thistle;">Logout</a></p>
+
+    <h1>Generate the ShortURL of long link </h1>
+
+    <% if(locals.error){ %>
+        <p style="color: red;">Error: <%= error %></p>
+    <% } %>
+
+    <form method="post" action="/url">
+        <label>Enter the original URL of the address </label>
+        <input type="text" name="url"
+        placeholder="Enter the URL here"
+        style="width: 300px; height: 30px; border-radius: 10px; text-align: center;">
+
+
+        <button type="submit">Generate</button>
+
+    </form>
+    <% if(locals._id){ %>
+        <p style="color: green;">URL Generated : http://localhost:8001/<%= id %></p>
+    <% } %>
+
+    <% if(url && url.length > 0) { %>
+        <h2>All Short URLs</h2>
+        <table style="margin: 20px auto;color: aliceblue; border-collapse: collapse; width: 80%;">
+            <thead>
+                <tr style="background-color: #333;">
+                    <th style="border: 1px solid #555; padding: 10px;">Sr. No.</th>
+                    <th style="border: 1px solid #555; padding: 10px;">ShortID</th>
+                    <th style="border: 1px solid #555; padding: 10px;">RedirectURL</th>
+                    <th style="border: 1px solid #555; padding: 10px;">Clicks</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% url.forEach((url, index)=>{ %>
+                        <tr>
+                            <td style="border: 1px solid #555; padding: 10px;"><%= index + 1 %></td>
+                            <td style="border: 1px solid #555; padding: 10px;"><%= url.shortId %></td>
+                            <td style="border: 1px solid #555; padding: 10px;"><%= url.redirectURL %></td>
+                            <td style="border: 1px solid #555; padding: 10px;"><%= url.visitHistory.length %></td>
+                        </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+    
+</body>
+</html>
