@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+</head>
+<body style="background-color: black; color: thistle; text-align: center;">
+    <h1>Sign Up</h1>
+    <% if (typeof error !== 'undefined' && error) { %>
+      <p style="color:red;"><%= error %></p>
+    <% } %>
+    
+    <p><a href="/login" style="color: thistle;">Already have an account? Login here</a></p>
+
+    <form action="/authuser" method="post">
+        <label>full name</label>
+        <input type="text" name="username" placeholder="Enter your full name">
+        <br>
+        <label>email</label>
+        <input type="email" required name="email" placeholder="Enter your email">
+        <br>
+        <label>password</label>
+        <input type="password" required name="password" placeholder="Enter your password">
+        <br>
+        <button type="submit">SignUp</button>
+    </form>
+</body>
+</html>
