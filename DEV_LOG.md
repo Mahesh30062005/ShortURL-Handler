@@ -5,3 +5,4 @@
 - [2025-10-06 23:13] created first GET route /api/health
 - [2025-10-07 19:37] fix: resolved port conflict issue
 - [2025-10-08 16:48] doccumentation: updated readme with project goals
+- [2025-10-02 15:54] init: initialized project with npm and git
