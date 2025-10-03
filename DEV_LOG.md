@@ -13,3 +13,4 @@
 - [2025-10-08 22:58] documentation: updated readme with project goals
 - [2025-10-01 16:16] init: initial project structure with npm
 - [2025-10-02 18:39] installed express and created server entry point
+- [2025-10-03 10:34] configured nodemon for hot reloading
