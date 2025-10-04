@@ -7,3 +7,4 @@
 - [2025-10-08 16:48] doccumentation: updated readme with project goals
 - [2025-10-02 15:54] init: initialized project with npm and git
 - [2025-10-03 12:45] set up basic express server structure
+- [2025-10-04 15:35] added nodemon for development workflow
