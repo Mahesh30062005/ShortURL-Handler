@@ -15,3 +15,4 @@
 - [2025-10-02 18:39] installed express and created server entry point
 - [2025-10-03 10:34] configured nodemon for hot reloading
 - [2025-10-06 18:43] implemented basic health check route
+- [2025-10-07 16:46] documentation: added project architecture to readme
