@@ -16,3 +16,4 @@
 - [2025-10-03 10:34] configured nodemon for hot reloading
 - [2025-10-06 18:43] implemented basic health check route
 - [2025-10-07 16:46] documentation: added project architecture to readme
+- [2025-10-08 15:32] feat: set up mongodb connection using mongoose
