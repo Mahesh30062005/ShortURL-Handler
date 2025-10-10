@@ -18,3 +18,4 @@
 - [2025-10-07 16:46] documentation: added project architecture to readme
 - [2025-10-08 15:32] feat: set up mongodb connection using mongoose
 - [2025-10-09 12:07] fix: resolved db connection timeout issue
+- [2025-10-10 20:19] created UrlSchema with shortId and redirectUrl
