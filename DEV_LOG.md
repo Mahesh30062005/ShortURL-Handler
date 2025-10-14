@@ -20,3 +20,4 @@
 - [2025-10-09 12:07] fix: resolved db connection timeout issue
 - [2025-10-10 20:19] created UrlSchema with shortId and redirectUrl
 - [2025-10-13 11:58] added nanoid for unique string generation
+- [2025-10-14 14:30] tested DB: wrote script to verify schema validation
