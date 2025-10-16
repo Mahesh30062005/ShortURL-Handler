@@ -22,3 +22,4 @@
 - [2025-10-13 11:58] added nanoid for unique string generation
 - [2025-10-14 14:30] tested DB: wrote script to verify schema validation
 - [2025-10-15 18:56] feat: implemented POST /shorten endpoint
+- [2025-10-16 14:36] implemented GET /:id redirect logic
