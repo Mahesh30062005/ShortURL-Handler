@@ -23,3 +23,4 @@
 - [2025-10-14 14:30] tested DB: wrote script to verify schema validation
 - [2025-10-15 18:56] feat: implemented POST /shorten endpoint
 - [2025-10-16 14:36] implemented GET /:id redirect logic
+- [2025-10-17 10:02] fix: added error handling for invalid urls
