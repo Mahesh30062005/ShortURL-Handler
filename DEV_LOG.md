@@ -25,3 +25,4 @@
 - [2025-10-16 14:36] implemented GET /:id redirect logic
 - [2025-10-17 10:02] fix: added error handling for invalid urls
 - [2025-10-19 12:10] separated routes into dedicated folder
+- [2025-10-20 13:21] added click count tracking to model
