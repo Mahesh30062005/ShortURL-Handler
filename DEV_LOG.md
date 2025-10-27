@@ -30,3 +30,4 @@
 - [2025-10-22 23:02] chore: init client folder for react app
 - [2025-10-23 22:43] created basic input form component
 - [2025-10-24 22:15] style:added css for centering the form
+- [2025-10-27 14:18] integrated axios for frontend-backend communication
