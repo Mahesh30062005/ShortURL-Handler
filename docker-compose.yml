@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # Your Node.js App
+  app:
+    build: .
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - MONGO_URL=mongodb://mongo:27017/short-url
+    depends_on:
+      - mongo
+
+  # A fresh MongoDB database
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
